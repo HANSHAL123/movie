@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Piazzolla", serif;
+}
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  margin: 0;
+}
+
+/* navbar style */
+.main_menu {
+  background-color: var(--main-bg);
+}
+
+.navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 2rem 0;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar li {
+  margin-left: 2rem;
+}
+
+.navbar-toggler {
+  background-color: #718093;
+}
+
+.fa-snowflake {
+  -webkit-transition: all linear;
+  transition: all linear;
+  -webkit-animation: rot 2s linear infinite;
+          animation: rot 2s linear infinite;
+  color: var(--main-color);
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.navbar-toggler {
+  background: #f0efff !important;
+  color: #ff9900 !important;
+  display: -ms-grid;
+  display: grid;
+}
+
+.navbar-toggler span, .navbar-toggler .fa-ellipsis-v {
+  color: #ff9900 !important;
+}
+
+/* main header part  */
+.carousel-item img {
+  height: 77.3vh;
+}
+
+.carousel-indicators li {
+  width: 5%;
+  height: 10%;
+  background: #0099ff;
+  border-radius: 100px;
+}
+
+/* weather page style */
+/* 404 error page */
+.main_header_left .errimg img {
+  width: 60rem;
+  height: 30rem;
+}
+
+/* footer style  */
+footer {
+  width: 100%;
+  /* height: 5rem; */
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  line-height: 5rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/* responsive code  */
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin-top: 3rem;
+  }
+  .temp_form {
+    width: auto;
+  }
+  .tempInformation {
+    width: auto;
+  }
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+}
+/*# sourceMappingURL=style.css.map */
